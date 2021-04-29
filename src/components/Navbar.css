@@ -1,0 +1,76 @@
+.navbar{
+    background: linear-gradient(to right, #d9a7c7, #fffcdc);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 550;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    max-width: 1500px; 
+}
+
+.navbar-logo{
+    color: whitesmoke;
+    justify-self: start;/*ignored in flexbox*/
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-icon{
+    color: whitesmoke;
+    padding-left: 10px;
+
+}
+
+.fa-typo3{
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu{
+   display: grid;
+   grid-template-columns: repeat(4, auto); 
+   grid-gap: 10px;
+   list-style: none;
+   text-align: center;
+   width: 60vw;
+   justify-content: end;
+   margin-right: 2rem;
+}
+
+.nav-item{
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav-links{
+    color: #0f2027;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 7px;
+    
+}
+
+.signupButton{
+    border: red;
+    
+}
