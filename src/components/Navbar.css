@@ -63,12 +63,20 @@
 }
 
 .nav-links{
-    color: #0f2027;
+    /*color: #0f2027;*/
+    color: #454536;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 7px;
     
 }
+
+/*
+.nav ul{
+    display: flex;
+
+}
+*/
 
 .signupButton{
     border: red;

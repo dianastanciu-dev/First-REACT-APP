@@ -1,4 +1,4 @@
-import React, { useState} from "react"
+import React, { useState, useEffect} from "react"
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { Button } from './Button'
@@ -7,7 +7,7 @@ import './Button.css'
 function Navbar(){
  
 const [click, setClick] = useState(false)
-const [button, setButton] =useState(true)
+const [button, setButton] = useState(true)
 
 const handleClick = () => setClick(!click)
 const closeMobileMenu = () => setClick(false)
@@ -16,18 +16,24 @@ const closeMobileMenu = () => setClick(false)
 const showButton = () => {
 if(window.innerWidth <= 960 )
 {
-  setButton(false)
+  setButton(false);
 }else{  
-  setButton(true)
+  setButton(true);
 }
-}
+};
 
-window.addEventListener('resize', showButton)
+useEffect(()=> {
+  showButton()
+}, []);
+
+window.addEventListener('resize', showButton);
 
 return(
 <div>
 
-      <nav className="navbar">  
+      <nav className="navbar"
+      onClick={closeMobileMenu}
+      >  
         <div className="navbar-container"> 
         <Link to="/" className="navbar-logo">
         RAINBOW
@@ -80,12 +86,14 @@ return(
 
 </ul>
 
-{button && <Button buttonStyle='btn--outline' className='className' className="signupButton">SIGN UP</Button>}
+{button && <Button buttonStyle='btn--outline' className="signupButton">SIGN UP</Button>}
 
         </div>
       </nav>
 </div>  
+
 )
-}
+}/*{function Navbar}*/
+
 
 export default Navbar;

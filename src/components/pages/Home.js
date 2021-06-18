@@ -17,7 +17,7 @@ function Home() {
     return (
         <div>
             <HeroSection />
-            <Button onClick={handleClick}>Buton</Button>
+            <Button onClick={handleClick}>some other Button</Button>
 
         </div>
     )
