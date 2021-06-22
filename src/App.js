@@ -18,9 +18,10 @@ function App() {
       <Navbar /> {/*Navbar pe toate paginile*/}
       <Switch>
           
-          <Route path="/" exact>
-          <Home />   {/*componenta Home doar pe pagina Home*/}
-          </Route>
+          <Route path="/" exact component=
+          {Home} 
+          />{/*componenta Home doar pe pagina Home*/}
+          
       </Switch>
     </>
     </Router>

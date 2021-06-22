@@ -1,0 +1,48 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import img1 from '../images/img1.jpeg'
+import img2 from '../images/img2.jpg'
+import './Cards.css'
+
+function CardItem() {
+    return (
+        <div>
+           <li className="cards__item">
+           <Link className="cards__item__link">
+
+           <figure className="cards__item__pic-wrap">           
+           <img src={ img1 } alt="someText" className="cards__item__img"/>
+           </figure>
+
+           <div className="cards__item__info">
+           <h5 className="cards__item__text">
+
+           </h5>
+           </div>
+
+           </Link>
+           </li>
+
+
+           <li className="cards__item">
+           <Link className="cards__item__link">
+
+           <figure className="cards__item__pic-wrap">           
+           <img src={ img2 } alt="someText" className="cards__item__img"/>
+           </figure>
+
+           <div className="cards__item__info">
+           <h5 className="cards__item__text">
+
+           </h5>
+           </div>
+           
+           </Link>
+           </li>
+
+
+        </div>
+    )
+}
+
+export default CardItem

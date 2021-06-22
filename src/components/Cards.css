@@ -1,0 +1,56 @@
+.cards{
+    padding: 4rem;
+}
+
+h1{
+    text-align: center;
+    color: #c9a227;
+    /*text-shadow: 1px 0px #000009;*/
+    margin: 100px 0 80px 0;
+    position: relative;
+}
+
+.cards__container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.cards__wrapper{
+    position: relative;
+    margin: 50px 0 45px;
+}
+
+.cards__items{
+    margin-bottom: 24px;
+
+}
+
+.cards__item{    /*CLASS FOUND IN CardItem.js*/
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    
+}
+
+.cards__item__img{
+    width: 30vw;
+}
+
+.cards__item__img:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 960px){
+    h1{
+        font-size: 1em;
+        margin: 100px 0 80px 0;
+        
+    }
+}

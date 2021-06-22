@@ -3,6 +3,7 @@ import HeroSection from './../HeroSection'
 import Button from '../Button'
 import '../Button.css'
 import { useHistory } from "react-router-dom" 
+import Cards from '../Cards'
 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
     return (
         <div>
             <HeroSection />
+            <Cards />
             <Button onClick={handleClick}>some other Button</Button>
 
         </div>
